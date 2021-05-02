@@ -1,7 +1,12 @@
-Compare the output tensor values from trt python script and deepstream app. 
-The deepstream app is changed based on https://github.com/NVIDIA-AI-IOT/deepstream_pose_estimation.git
+Compare the output tensor values from trt python script and deepstream app.<br />
+The deepstream app is changed based on https://github.com/NVIDIA-AI-IOT/deepstream_pose_estimation.git<br />
 
-cd deepstream
-./run.sh    # run the app without publish the pose output
-./run_m.sh  # run the app publishing the pose output
+Enviroment:
+nvcr.io/nvidia/deepstream:5.1-21.02-triton
+
+cd deepstream<br />
+./download_model.sh # download the model<br />
+make                # build the program ( if needed ) 
+./run.sh            # run the app without publish the pose output<br />
+./run_m.sh          # run the app publishing the pose output<br />
 
